@@ -5,9 +5,9 @@ const { View, StyleSheet, TouchableOpacity, Image, Text,
   Platform } = React
 //constants
 import { NavBodyHeight, WidthScale, Red, Yellow,
-  ContainerBackgroundColor, FlexRow } from '../constants/StyleConstants'
+  ContainerBackgroundColor, FlexRow } from '../../constants/StyleConstants'
 import { COUNT_TYPE_DEBIT_CARD, COUNT_TYPE_PASS_BOOK,
-  COUNT_TYPE_DEPOSIT_RECEIPT } from '../constants/NormalConstants'
+  COUNT_TYPE_DEPOSIT_RECEIPT } from '../../constants/NormalConstants'
 
 
 const CountBox = React.createClass({

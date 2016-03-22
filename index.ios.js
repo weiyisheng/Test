@@ -8,15 +8,20 @@ import React, {
   Component,
   StyleSheet,
   Text,
-  View
+  View,
+  Navigator
 } from 'react-native';
-import MainScene from './MainScene'
+
+import MainScene from './components/MainScene'
 
 class Test extends Component {
-
   render() {
     return (
-      <MainScene />
+      <Navigator
+        initialRoute={{component: MainScene}}
+        renderScene={(route, navigator) => {
+          return <route.component navigator={navigator}/>
+        }}/>
     );
   }
 }

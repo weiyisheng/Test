@@ -2,14 +2,13 @@ import React from 'react-native'
 import { View, Text, StyleSheet, Platform } from 'react-native'
 
 //components
-import Loading from './components/common/Loading'
-import NoCountScene from './components/NoCountScene'
-import HasCountScene from './components/HasCountScene'
-import NavigationBar from './components/common/navBar/NavBar'
+import Loading from './common/Loading'
+import NoCountScene from './notLinked/NoCountScene'
+import HasCountScene from './notLinked/HasCountScene'
 
 //constants
-import { Flex1, ContainerBackgroundColor } from './constants/StyleConstants'
-import { SCENE_TAG_NO_COUNT, SCENE_TAG_HAS_COUNT } from './constants/NormalConstants'
+import { Flex1, ContainerBackgroundColor } from '../constants/StyleConstants'
+import { SCENE_TAG_NO_COUNT, SCENE_TAG_HAS_COUNT } from '../constants/NormalConstants'
 
 
 const MainScene = React.createClass({
