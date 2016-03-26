@@ -82,6 +82,7 @@ const styles = StyleSheet.create({
     paddingRight: 13 * WidthScale,
     color: TextYellow,
     fontSize: 13,
+    width: 80
   },
   cell: {
     marginBottom: 15 * WidthScale,

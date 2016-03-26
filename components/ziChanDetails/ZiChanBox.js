@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     borderLeftWidth: 6,
     borderLeftColor: "#262626",
     backgroundColor: "#dadada",
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
   boxName: {
     alignSelf: "center",
@@ -76,13 +76,14 @@ const styles = StyleSheet.create({
     paddingTop: 13 * WidthScale,
     paddingBottom: 13 * WidthScale,
     paddingLeft: 6 * WidthScale,
-    color: TextBlack
+    color: TextBlack,
+    width: 100
   },
   boxOpt: {
     fontSize: 14,
     color: "#D11E10",
     alignSelf: "center",
-    paddingRight: 18 * WidthScale
+    paddingRight: 18 * WidthScale,
   },
   item: {
     paddingLeft: 13 * WidthScale,
