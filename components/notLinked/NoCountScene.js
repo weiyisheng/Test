@@ -3,16 +3,16 @@ import { View, Text, StyleSheet, Image, TouchableOpacity,
   Platform } from 'react-native'
 
 //compoennts
-import Loading from '../common/Loading'
-import NavigationBar from '../common/NavigationBar'
+import Loading from 'Test/components/common/Loading'
+import NavigationBar from 'Test/components/common/NavigationBar'
 
 //constants
 import { Flex1, JustifyContentCenter, AlignItemsCenter,
   NavBody, TextColorBlack, WindowHeight, WindowWidth, Absolute,
-  HeightScale, ContainerBackgroundColor, Red } from '../../constants/StyleConstants'
-import { SCENE_TAG_NO_COUNT, SCENE_TAG_HAS_COUNT } from '../../constants/NormalConstants'
+  HeightScale, ContainerBackgroundColor, Red } from 'Test/constants/StyleConstants'
+import { SCENE_TAG_NO_COUNT, SCENE_TAG_HAS_COUNT } from 'Test/constants/NormalConstants'
 
-import { BeginRequestUserInfoMesage } from '../../dataModle/dataModel'
+import { BeginRequestUserInfoMesage } from 'Test/dataModle/dataModel'
 
 
 const NoCountScene = React.createClass({

@@ -4,16 +4,16 @@ import { StyleSheet } from 'react-native'
 //components
 import ScrollableTabView from 'react-native-scrollable-tab-view'
 import { View, ScrollView } from 'react-native'
-import NavigationBar from './common/NavigationBar'
-import LiCai from './main/LiCai'
-import Wo from './main/Wo'
-import ShengHuo from './main/ShengHuo'
-import ShouYe from './main/ShouYe'
-import CustomTabBar from './main/CustomTabBar'
+import NavigationBar from 'Test/components/common/NavigationBar'
+import LiCai from 'Test/components/main/LiCai'
+import Wo from 'Test/components/main/Wo'
+import ShengHuo from 'Test/components/main/ShengHuo'
+import ShouYe from 'Test/components/main/ShouYe'
+import CustomTabBar from 'Test/components/main/CustomTabBar'
 
 
 //constants
-import { Flex1 } from '../constants/StyleConstants'
+import { Flex1 } from 'Test/constants/StyleConstants'
 
 const MainScene = React.createClass({
 
@@ -24,7 +24,7 @@ const MainScene = React.createClass({
         <NavigationBar
           title={{title: "泸州市商业银行", tintColor: "red"}}
           rightButton={{title: "直销银行"}}
-          tintColor={"#e0e0e0"}/>
+          tintColor={"#d2d2d2"}/>
 
         <ScrollableTabView
           renderTabBar={() => <CustomTabBar/>}

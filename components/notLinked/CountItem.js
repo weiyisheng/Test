@@ -1,7 +1,7 @@
 import React from 'react-native'
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
 
-import { WidthScale } from '../../constants/StyleConstants'
+import { WidthScale } from 'Test/constants/StyleConstants'
 
 class CountItem extends React.Component {
 

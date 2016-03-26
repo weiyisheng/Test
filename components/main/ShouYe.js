@@ -5,15 +5,18 @@ import { StyleSheet } from 'react-native'
 import { View, Text } from 'react-native'
 
 //constants
-import { Flex1, JustifyContentCenter, AlignItemsCenter } from '../../constants/StyleConstants'
+import { Flex1, JustifyContentCenter, AlignItemsCenter } from 'Test/constants/StyleConstants'
 
 const ShouYe = React.createClass({
 
   render() {
 
     return (
-      <View style={[Flex1, JustifyContentCenter, AlignItemsCenter]}>
-        <Text>首页</Text>
+      <View style={[Flex1]}>
+        <View>
+
+
+        </View>
       </View>
     )
   }

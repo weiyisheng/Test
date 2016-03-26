@@ -5,7 +5,7 @@ import { StyleSheet } from 'react-native'
 import { View, Text } from 'react-native'
 
 //constants
-import { Flex1, JustifyContentCenter, AlignItemsCenter } from '../../constants/StyleConstants'
+import { Flex1, JustifyContentCenter, AlignItemsCenter } from 'Test/constants/StyleConstants'
 
 const ShengHuo = React.createClass({
 

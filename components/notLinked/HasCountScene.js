@@ -4,14 +4,14 @@ import React from 'react-native'
 const { View, StyleSheet, Text, ScrollView, Platform,
   TextInput, TouchableOpacity } = React
 import Modal from 'react-native-modalbox'
-import NavigationBar from '../common/NavigationBar'
-import CountBox from './CountBox'
+import NavigationBar from 'Test/components/common/NavigationBar'
+import CountBox from 'Test/components/notLinked/CountBox'
 
 //constants
 import { NavBodyHeight, WidthScale, Red, Yellow,
-  ContainerBackgroundColor, Flex1, FlexRow, TextColorBlack } from '../../constants/StyleConstants'
+  ContainerBackgroundColor, Flex1, FlexRow, TextColorBlack } from 'Test/constants/StyleConstants'
 import { COUNT_TYPE_DEBIT_CARD, COUNT_TYPE_PASS_BOOK,
-  COUNT_TYPE_DEPOSIT_RECEIPT } from '../../constants/NormalConstants'
+  COUNT_TYPE_DEPOSIT_RECEIPT } from 'Test/constants/NormalConstants'
 
 const HasCountScene = React.createClass({
 
