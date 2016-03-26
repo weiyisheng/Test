@@ -8,7 +8,7 @@ import { View, Text, TouchableOpacity, Image,
 //constants
 import { Flex1, FlexRow, WidthScale } from 'Test/constants/StyleConstants'
 import { NavbarBack, TextBlack } from 'Test/constants/colors'
-import ZiChanXiangQing from 'Test/components/main/ZiChanXiangQing'
+import ZiChanDetails from 'Test/components/ZiChanDetailsScene'
 
 const ShouYe = React.createClass({
 
@@ -24,7 +24,7 @@ const ShouYe = React.createClass({
           </View>
           <View style={[FlexRow, {justifyContent: 'space-between'}]}>
             <TouchableOpacity
-              onPress={() => this.props.navigator.push({component: ZiChanXiangQing})}>
+              onPress={() => this.props.navigator.push({component: ZiChanDetails})}>
               <View style={[FlexRow]}>
                 <Image style={{width: 17, height: 17, backgroundColor: "#000"}}/>
                 <Text style={[styles.infoBtnText]}>资产详情</Text>

@@ -29,7 +29,7 @@ const NoCountScene = React.createClass({
         statusBar={statusBar}/>
         <View style={[Absolute, JustifyContentCenter,
             AlignItemsCenter, styles.body]}>
-          <Image source={require('../res/relevance_property_ic_succeed.png')}/>
+          <Image source={require('Test/res/relevance_property_ic_succeed.png')}/>
           <Text style={[styles.infoText]}>
             您的行内资产都已添加成功</Text>
           <Text style={[styles.helpText, { marginTop: 16 * HeightScale}]}>

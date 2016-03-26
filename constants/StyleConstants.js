@@ -20,7 +20,7 @@ module.exports = {
   },
   BorderBottom: {
     borderBottomWidth: 1,
-    borderBottomColor: '#eeeeee'
+    borderBottomColor: '#e0e0e0'
   },
   BorderTop: {
     borderTopWidth: 1,
@@ -43,6 +43,9 @@ module.exports = {
   },
   JustifyContentCenter: {
     justifyContent: 'center'
+  },
+  JustifyContentBetween: {
+    justifyContent: 'space-between'
   },
   AlignItemsCenter: {
     alignItems: 'center'
