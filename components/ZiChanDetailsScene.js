@@ -8,7 +8,7 @@ import ZiChanBox from 'Test/components/ziChanDetails/ZiChanBox'
 import Button from 'apsl-react-native-button'
 
 //constants
-import { Flex1 } from 'Test/constants/StyleConstants'
+import { Flex1, FontSize } from 'Test/constants/StyleConstants'
 
 const ZiChanXiangQing = React.createClass({
 
@@ -26,7 +26,7 @@ const ZiChanXiangQing = React.createClass({
           <ZiChanBox navigator={navigator}/>
 
 
-          <Button style={{borderWidth: 0}} textStyle={{fontSize: 15}}>
+          <Button style={{borderWidth: 0}} textStyle={{fontSize: FontSize}}>
             + 添加资产账户
           </Button>
         </ScrollView>

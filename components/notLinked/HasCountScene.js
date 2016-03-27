@@ -9,7 +9,7 @@ import CountBox from 'Test/components/notLinked/CountBox'
 
 //constants
 import { NavBodyHeight, WidthScale, Red, Yellow,
-  ContainerBackgroundColor, Flex1, FlexRow, TextColorBlack } from 'Test/constants/StyleConstants'
+  ContainerBackgroundColor, Flex1, FlexRow, TextColorBlack, FontSize } from 'Test/constants/StyleConstants'
 import { COUNT_TYPE_DEBIT_CARD, COUNT_TYPE_PASS_BOOK,
   COUNT_TYPE_DEPOSIT_RECEIPT } from 'Test/constants/NormalConstants'
 
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
   },
   infoText: {
     color: Red,
-    fontSize: 17 * WidthScale,
+    fontSize: FontSize + 2,
   },
 
   modal: {
@@ -107,10 +107,10 @@ const styles = StyleSheet.create({
     paddingTop: 12 * WidthScale
   },
   modalTitleBtnText: {
-    fontSize: 16,
+    fontSize: FontSize + 1,
     opacity: .6
   },
   modalTitleText: {
-    fontSize: 17
+    fontSize: FontSize + 2
   }
 })

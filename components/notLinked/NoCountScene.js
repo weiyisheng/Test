@@ -9,7 +9,7 @@ import NavigationBar from 'Test/components/common/NavigationBar'
 //constants
 import { Flex1, JustifyContentCenter, AlignItemsCenter,
   NavBody, TextColorBlack, WindowHeight, WindowWidth, Absolute,
-  HeightScale, ContainerBackgroundColor, Red } from 'Test/constants/StyleConstants'
+  HeightScale, ContainerBackgroundColor, Red, FontSize } from 'Test/constants/StyleConstants'
 import { SCENE_TAG_NO_COUNT, SCENE_TAG_HAS_COUNT } from 'Test/constants/NormalConstants'
 
 import { BeginRequestUserInfoMesage } from 'Test/dataModle/dataModel'
@@ -57,11 +57,11 @@ const styles = StyleSheet.create({
   },
   infoText: {
     marginTop: 34 * HeightScale,
-    fontSize: 21 * HeightScale,
+    fontSize: (FontSize + 6) * HeightScale,
     textAlign: "center"
   },
   helpText: {
-    fontSize: 17 * HeightScale,
+    fontSize: (FontSize + 2) * HeightScale,
     color: "#a0a0a0",
     textAlign: "center"
   },
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     marginTop: 76 * HeightScale
   },
   knowBtnText: {
-    fontSize: 17 * HeightScale,
+    fontSize: (FontSize + 2) * HeightScale,
     color: Red
   }
 })
