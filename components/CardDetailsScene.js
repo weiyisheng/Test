@@ -6,6 +6,7 @@ import { View, Text, ScrollView } from 'react-native'
 import NavbarScene from 'Test/components/NavbarScene'
 //constants
 import { Flex1 } from 'Test/constants/StyleConstants'
+import { BoxItemBackColor } from 'Test/constants/colors'
 
 const CardDetails = React.createClass({
 
@@ -15,7 +16,9 @@ const CardDetails = React.createClass({
         navigator={this.props.navigator}
         title={{title: "银行卡详情"}}>
         <ScrollView style={[Flex1]}>
+          <View style={[BoxItemBackColor]}>
 
+          </View>
         </ScrollView>
       </NavbarScene>
     )

@@ -8,7 +8,8 @@ import Button from 'apsl-react-native-button'
 //constants
 import { FlexRow, WidthScale, BorderBottom, JustifyContentCenter,
   AlignItemsCenter, BorderTop, ButtonStyle, ButtonText } from 'Test/constants/StyleConstants'
-import { TextBlack, TextYellow } from 'Test/constants/colors'
+import { TextBlack, TextYellow, BoxItemBackColor,
+  BoxTitleBackColor, BoxTitleBorderLeft } from 'Test/constants/colors'
 // <TouchableOpacity
 //   style={[JustifyContentCenter, AlignItemsCenter,
 //     styles.btn,
@@ -26,12 +27,12 @@ const ZiChanBox = React.createClass({
     if(dianZi) {
       return (
         <View style={[styles.boxs]}>
-          <View style={[FlexRow, styles.boxTitle]}>
+          <View style={[FlexRow, BoxTitleBackColor, BoxTitleBorderLeft, styles.boxTitle]}>
             <Text style={[styles.boxName]}>电子账户</Text>
             <Text style={[styles.boxOpt]}>账户管理</Text>
           </View>
 
-          <View style={[BorderTop, styles.item]}>
+          <View style={[BorderTop, BoxItemBackColor, styles.item]}>
             <Text style={[styles.dianziNum]}>48493***7979897</Text>
             <Text style={[styles.dianziMoney]}>¥10.00</Text>
             <View style={[FlexRow, JustifyContentCenter, {marginBottom: 18 * WidthScale}]}>
@@ -54,7 +55,7 @@ const ZiChanBox = React.createClass({
     } else {
       return (
         <View style={[styles.boxs]}>
-          <View style={[FlexRow, styles.boxTitle]}>
+          <View style={[FlexRow, BoxTitleBackColor, BoxTitleBorderLeft, styles.boxTitle]}>
             <Text style={[styles.boxName]}>银行卡</Text>
           </View>
 
@@ -76,9 +77,6 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
   boxTitle: {
-    borderLeftWidth: 6,
-    borderLeftColor: "#262626",
-    backgroundColor: "#dadada",
     justifyContent: 'space-between',
   },
   boxName: {
@@ -98,7 +96,6 @@ const styles = StyleSheet.create({
   },
   item: {
     paddingLeft: 13 * WidthScale,
-    backgroundColor: "#f4f4f4",
     borderBottomColor: "#ccc"
   },
   dianziNum: {
