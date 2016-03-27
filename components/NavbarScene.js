@@ -5,7 +5,7 @@ import { StyleSheet } from 'react-native'
 import { View, Text, Image, TouchableOpacity } from 'react-native'
 import NavigationBar from 'Test/components/common/NavigationBar'
 //constants
-import { Flex1, ContainerBackgroundColor } from 'Test/constants/StyleConstants'
+import { Flex1, ContainerBackgroundColor, FontSize } from 'Test/constants/StyleConstants'
 import { TextBlack, NavbarBack } from 'Test/constants/colors'
 
 
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     paddingTop: 4
   },
   buttonText: {
-    fontSize: 15,
+    fontSize: FontSize,
     color: TextBlack,
     alignSelf: "center",
     paddingLeft: 8

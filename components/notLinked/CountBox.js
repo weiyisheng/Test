@@ -5,7 +5,7 @@ const { View, StyleSheet, TouchableOpacity, Image, Text,
   Platform } = React
 //constants
 import { NavBodyHeight, WidthScale, Red, Yellow,
-  ContainerBackgroundColor, FlexRow } from 'Test/constants/StyleConstants'
+  ContainerBackgroundColor, FlexRow, FontSize } from 'Test/constants/StyleConstants'
 import { COUNT_TYPE_DEBIT_CARD, COUNT_TYPE_PASS_BOOK,
   COUNT_TYPE_DEPOSIT_RECEIPT } from 'Test/constants/NormalConstants'
 
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
     paddingTop: 12 * WidthScale
   },
   titleText: {
-    fontSize: 15,
+    fontSize: FontSize,
     marginLeft: 8,
     alignSelf: "center"
   },
@@ -108,6 +108,6 @@ const styles = StyleSheet.create({
     borderBottomColor: "#f0f0f0"
   },
   countNum: {
-    fontSize: 16,
+    fontSize: FontSize + 1,
   }
 })

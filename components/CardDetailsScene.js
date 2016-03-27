@@ -9,8 +9,8 @@ import Cell from 'Test/components/common/Cell'
 import Button from 'apsl-react-native-button'
 
 //constants
-import { Flex1, WidthScale, BorderBottom } from 'Test/constants/StyleConstants'
-import { BoxItemBackColor, TextYellow } from 'Test/constants/colors'
+import { Flex1, WidthScale, BorderBottom, FontSize } from 'Test/constants/StyleConstants'
+import { BoxItemBackColor, TextYellow, TextBlack, TextRed } from 'Test/constants/colors'
 
 const CardDetails = React.createClass({
 
@@ -61,25 +61,36 @@ const CardDetails = React.createClass({
                 height: 20,
                 marginBottom: 13 * WidthScale,
                 marginTop: 5 * WidthScale}}
-              textStyle={{textAlign: "right", fontSize: 13,
-                color: TextYellow, paddingRight: 13 * WidthScale}}>交易查询 > </Button>
+              textStyle={{textAlign: "right", fontSize: FontSize - 2,
+                color: TextYellow, marginRight: 13 * WidthScale}}>交易查询 > </Button>
           </View>
 
           <Cell
             left={{text: "定期"}}
             right={{text: "¥6084988.00"}}
-            style={{marginTop: 13 * WidthScale, marginBottom: 13 * WidthScale}}/>
+            style={{marginTop: 13 * WidthScale, marginBottom: 7 * WidthScale}}/>
 
           {this.renderDingQiBox()}
           {this.renderDingQiBox()}
           {this.renderDingQiBox()}
           {this.renderDingQiBox()}
-          
+
         </ScrollView>
         <Modal
           ref={c => this.delModal = c}
           position={"bottom"}
-          style={[styles.delModal]}/>
+          style={[styles.delModal]}>
+          <Text style={[styles.modalInfo]}>你要删除该账户吗？</Text>
+          <Button
+            style={[styles.modalBtn, {borderColor: TextRed}]}
+            textStyle={{fontSize: FontSize, color: TextRed }}
+            isLoading={false}>删除</Button>
+
+          <Button
+            style={[styles.modalBtn, {borderWidth: 0, marginTop: 12 * WidthScale}]}
+            textStyle={{fontSize: FontSize }}
+            onPress={() => this.delModal.close()}>取消</Button>
+        </Modal>
       </NavbarScene>
     )
   }
@@ -89,14 +100,26 @@ module.exports = CardDetails
 
 const styles = StyleSheet.create({
   count: {
-    fontSize: 16,
+    fontSize: FontSize + 1,
     color: TextYellow,
-    paddingTop: 10 * WidthScale,
-    paddingBottom: 10 * WidthScale,
+    marginTop: 10 * WidthScale,
+    marginBottom: 10 * WidthScale,
     textAlign: 'right',
-    paddingRight: 13 * WidthScale
+    marginRight: 13 * WidthScale
   },
   delModal: {
-    height: 200
+    height: 200 * WidthScale
+  },
+  modalInfo: {
+    fontSize: FontSize,
+    color: TextBlack,
+    textAlign: "center",
+    marginTop: 30 * WidthScale,
+    marginBottom: 30 * WidthScale
+  },
+  modalBtn: {
+    marginLeft: 40 * WidthScale,
+    marginRight: 40 * WidthScale,
+    height: 40 * WidthScale
   }
 })

@@ -7,7 +7,7 @@ import { View, Text, TouchableOpacity, Image,
 import CunDaiTongScene from 'Test/components/CunDaiTongScene'
 
 //constants
-import { Flex1, FlexRow, WidthScale } from 'Test/constants/StyleConstants'
+import { Flex1, FlexRow, WidthScale, FontSize } from 'Test/constants/StyleConstants'
 import { NavbarBack, TextBlack } from 'Test/constants/colors'
 import ZiChanDetails from 'Test/components/ZiChanDetailsScene'
 
@@ -73,17 +73,17 @@ const styles = StyleSheet.create({
     marginBottom: 20
   },
   name: {
-    fontSize: 19,
+    fontSize: FontSize + 4,
     color: TextBlack
   },
   moneyNum: {
-    fontSize: 19,
+    fontSize: FontSize + 4,
     paddingLeft: 13,
     paddingRight: 13,
     color: TextBlack
   },
   infoBtnText: {
-    fontSize: 17,
+    fontSize: FontSize + 4,
     color: "#909090",
     paddingLeft: 8
   }

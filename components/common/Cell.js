@@ -1,6 +1,6 @@
 import React from 'react-native'
 import { View, Text, StyleSheet } from 'react-native'
-import { WidthScale } from 'Test/constants/StyleConstants'
+import { WidthScale, FontSize } from 'Test/constants/StyleConstants'
 import { TextBlack } from 'Test/constants/colors'
 const Cell = React.createClass({
 
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row'
   },
   cellText: {
-    fontSize: 13,
+    fontSize: FontSize - 2,
     color: TextBlack,
     marginRight: 13 * WidthScale,
     marginLeft: 13 * WidthScale

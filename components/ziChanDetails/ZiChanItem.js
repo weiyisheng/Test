@@ -10,7 +10,7 @@ import CardDetails from 'Test/components/CardDetailsScene'
 //constants
 import { Flex1, FlexRow, WidthScale, BorderTop,
   JustifyContentBetween, JustifyContentCenter, AlignItemsCenter,
-  WindowWidth } from 'Test/constants/StyleConstants'
+  WindowWidth, FontSize } from 'Test/constants/StyleConstants'
 import { TextBlack, TextYellow } from 'Test/constants/colors'
 
 const ZiChanItem = React.createClass({
@@ -63,18 +63,18 @@ const styles = StyleSheet.create({
   },
   itemTitleText: {
     color: TextBlack,
-    fontSize: 13,
+    fontSize: FontSize - 2,
     alignSelf: "center"
   },
   itemBody: {
     paddingTop: 15 * WidthScale
   },
   detailText: {
-    paddingTop: 12 * WidthScale,
-    paddingBottom: 12 * WidthScale,
-    paddingRight: 13 * WidthScale,
+    marginTop: 12 * WidthScale,
+    marginBottom: 12 * WidthScale,
+    marginRight: 13 * WidthScale,
     color: TextYellow,
-    fontSize: 13,
+    fontSize: FontSize - 2,
     width: 80
   },
 })

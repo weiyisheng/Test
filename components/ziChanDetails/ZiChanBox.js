@@ -7,7 +7,7 @@ import ZiChanItem from 'Test/components/ziChanDetails/ZiChanItem'
 import Button from 'apsl-react-native-button'
 //constants
 import { FlexRow, WidthScale, BorderBottom, JustifyContentCenter,
-  AlignItemsCenter, BorderTop, ButtonStyle, ButtonText } from 'Test/constants/StyleConstants'
+  AlignItemsCenter, BorderTop, ButtonStyle, ButtonText, FontSize } from 'Test/constants/StyleConstants'
 import { TextBlack, TextYellow, BoxItemBackColor,
   BoxTitleBackColor, BoxTitleBorderLeft } from 'Test/constants/colors'
 // <TouchableOpacity
@@ -81,15 +81,15 @@ const styles = StyleSheet.create({
   },
   boxName: {
     alignSelf: "center",
-    fontSize: 14,
-    paddingTop: 13 * WidthScale,
-    paddingBottom: 13 * WidthScale,
-    paddingLeft: 6 * WidthScale,
+    fontSize: FontSize - 1,
+    marginTop: 13 * WidthScale,
+    marginBottom: 13 * WidthScale,
+    marginLeft: 6 * WidthScale,
     color: TextBlack,
     width: 100
   },
   boxOpt: {
-    fontSize: 14,
+    fontSize: FontSize - 1,
     color: "#D11E10",
     alignSelf: "center",
     paddingRight: 18 * WidthScale,
@@ -99,15 +99,15 @@ const styles = StyleSheet.create({
     borderBottomColor: "#ccc"
   },
   dianziNum: {
-    fontSize: 13,
+    fontSize: FontSize,
     color: TextBlack,
-    paddingTop: 10 * WidthScale,
-    paddingBottom: 10 * WidthScale,
+    marginTop: 10 * WidthScale,
+    marginBottom: 10 * WidthScale,
     textAlign: 'center'
   },
   dianziMoney: {
-    fontSize: 17,
-    paddingBottom: 12 * WidthScale,
+    fontSize: FontSize + 2,
+    marginBottom: 12 * WidthScale,
     textAlign: 'center'
   },
 })

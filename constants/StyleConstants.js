@@ -10,6 +10,7 @@ module.exports = {
   WindowHeight: height,
   WidthScale: widthScale,
   HeightScale: heightScale,
+  FontSize: 15,
   Red: '#b33e4f',
   Yellow: '#fdf8e2',
   ContainerBackgroundColor: {

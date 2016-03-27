@@ -1,7 +1,7 @@
 import React from 'react-native'
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
 
-import { WidthScale } from 'Test/constants/StyleConstants'
+import { WidthScale, FontSize } from 'Test/constants/StyleConstants'
 
 class CountItem extends React.Component {
 
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     paddingBottom: 10 * WidthScale
   },
   itemText: {
-    fontSize: 16,
+    fontSize: FontSize + 1,
   },
 
 })
