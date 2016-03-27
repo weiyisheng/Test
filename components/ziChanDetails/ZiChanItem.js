@@ -4,6 +4,8 @@ import { StyleSheet } from 'react-native'
 //components
 import { View, Text, ScrollView, TouchableOpacity } from 'react-native'
 import NavbarScene from 'Test/components/NavbarScene'
+import Cell from 'Test/components/common/Cell'
+import CardDetails from 'Test/components/CardDetailsScene'
 
 //constants
 import { Flex1, FlexRow, WidthScale, BorderTop,
@@ -19,7 +21,9 @@ const ZiChanItem = React.createClass({
         <View style={[styles.itemTitleBorder]}>
           <View style={[FlexRow, JustifyContentBetween, styles.itemTitle]}>
             <Text style={[styles.itemTitleText]}>383392992*＊＊3485988</Text>
-            <TouchableOpacity style={{alignSelf: 'center'}}>
+            <TouchableOpacity
+              style={{alignSelf: 'center'}}
+              onPress={() => this.props.navigator.push({component: CardDetails})}>
               <Text style={[styles.detailText]}>
                 查看详情 >
               </Text>
@@ -28,20 +32,9 @@ const ZiChanItem = React.createClass({
         </View>
 
         <View style={[styles.itemBody]}>
-          <View style={[FlexRow, styles.cell]}>
-            <Text style={[styles.cellText]}>总额</Text>
-            <Text style={[styles.cellText]}>¥994.003.00</Text>
-          </View>
-
-          <View style={[FlexRow, styles.cell]}>
-            <Text style={[styles.cellText]}>活期</Text>
-            <Text style={[styles.cellText]}>¥94.003.00</Text>
-          </View>
-
-          <View style={[FlexRow, styles.cell]}>
-            <Text style={[styles.cellText]}>定期（2笔）</Text>
-            <Text style={[styles.cellText]}>¥654.003.00</Text>
-          </View>
+          <Cell left={{text: "总额"}} right={{text: "¥94.003.00"}}/>
+          <Cell left={{text: "定期存款"}} right={{text: "¥987694.003.00"}}/>
+          <Cell left={{text: "活期存款"}} right={{text: "¥7654394.003.00"}}/>
         </View>
 
       </View>
@@ -84,13 +77,4 @@ const styles = StyleSheet.create({
     fontSize: 13,
     width: 80
   },
-  cell: {
-    marginBottom: 15 * WidthScale,
-    justifyContent: 'space-between'
-  },
-  cellText: {
-    fontSize: 13,
-    color: TextBlack,
-    marginRight: 13 * WidthScale
-  }
 })

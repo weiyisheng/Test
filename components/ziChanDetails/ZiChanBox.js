@@ -22,7 +22,7 @@ import { TextBlack, TextYellow } from 'Test/constants/colors'
 const ZiChanBox = React.createClass({
 
   render() {
-    let { dianZi } = this.props
+    let { dianZi, navigator } = this.props
     if(dianZi) {
       return (
         <View style={[styles.boxs]}>
@@ -58,8 +58,8 @@ const ZiChanBox = React.createClass({
             <Text style={[styles.boxName]}>银行卡</Text>
           </View>
 
-          <ZiChanItem />
-          <ZiChanItem />
+          <ZiChanItem navigator={navigator}/>
+          <ZiChanItem navigator={navigator}/>
 
         </View>
       )
