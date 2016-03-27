@@ -3,6 +3,7 @@ module.exports = {
   TextBlack: "#101010",
   TextYellow: "#E97000",
   TextRed: "#E10202",
+  TextOrange: "#FFD700",
   BoxTitleBackColor: {
     backgroundColor: "#dadada"
   },
@@ -12,5 +13,6 @@ module.exports = {
   },
   BoxItemBackColor: {
     backgroundColor: "#f4f4f4",
-  }
+  },
+  ButtonBackgroundColor: "#EEB422"
 }

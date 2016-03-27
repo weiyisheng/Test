@@ -4,6 +4,7 @@ import { StyleSheet } from 'react-native'
 //components
 import { View, Text, TouchableOpacity, Image,
   ScrollView } from 'react-native'
+import CunDaiTongScene from 'Test/components/CunDaiTongScene'
 
 //constants
 import { Flex1, FlexRow, WidthScale } from 'Test/constants/StyleConstants'
@@ -11,6 +12,12 @@ import { NavbarBack, TextBlack } from 'Test/constants/colors'
 import ZiChanDetails from 'Test/components/ZiChanDetailsScene'
 
 const ShouYe = React.createClass({
+
+  goToCunDaiTong() {
+    this.props.navigator.push({
+      component: CunDaiTongScene
+    })
+  },
 
   render() {
 
@@ -41,7 +48,7 @@ const ShouYe = React.createClass({
         </View>
 
         <View style={{backgroundColor: "#f0f0f0", height: 180}}>
-
+          <TouchableOpacity onPress={this.goToCunDaiTong}><Text>存贷通</Text></TouchableOpacity>
         </View>
 
         <View style={{backgroundColor: "#FEB504", height: 480}}>
