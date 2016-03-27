@@ -15,7 +15,7 @@ const ZiChanXiangQing = React.createClass({
     const { navigator } = this.props
     return (
         <ScrollView style={[Flex1]}>
-          <View style={{height: 200, width: 3}}>
+          <View style={{height: 300, width: 3}}>
           </View>
           <ZiChanBox dianZi={true} navigator={navigator}/>
           <ZiChanBox navigator={navigator}/>
