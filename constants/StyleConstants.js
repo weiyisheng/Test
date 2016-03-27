@@ -24,15 +24,15 @@ module.exports = {
   },
   BorderTop: {
     borderTopWidth: 1,
-    borderTopColor: '#eeeeee'
+    borderTopColor: '#e0e0e0'
   },
   BorderLeft: {
     borderLeftWidth: 1,
-    borderLeftColor: '#eeeeee'
+    borderLeftColor: '#e0e0e0'
   },
   BorderRight: {
     borderRightWidth: 1,
-    borderRightColor: '#eeeeee'
+    borderRightColor: '#e0e0e0'
   },
   TextColorBlack: {
     opacity: 0.9,

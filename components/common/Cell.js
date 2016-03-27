@@ -39,7 +39,8 @@ const styles = StyleSheet.create({
   cellText: {
     fontSize: 13,
     color: TextBlack,
-    marginRight: 13 * WidthScale
+    marginRight: 13 * WidthScale,
+    marginLeft: 13 * WidthScale
   }
 })
 
