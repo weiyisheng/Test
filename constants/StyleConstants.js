@@ -62,5 +62,15 @@ module.exports = {
     left: 0,
     right: 0,
     bottom: 0
+  },
+  ButtonStyle: {
+    width: 108 * widthScale,
+    borderRadius: 50,
+    borderWidth: 0,
+    height: 32 * widthScale
+  },
+  ButtonText: {
+    fontSize: 14,
+    color: "#d7d7d7",
   }
 }

@@ -4,11 +4,21 @@ import { StyleSheet } from 'react-native'
 //components
 import { View, Text, TouchableOpacity } from 'react-native'
 import ZiChanItem from 'Test/components/ziChanDetails/ZiChanItem'
+import Button from 'apsl-react-native-button'
 //constants
 import { FlexRow, WidthScale, BorderBottom, JustifyContentCenter,
-  AlignItemsCenter, BorderTop } from 'Test/constants/StyleConstants'
+  AlignItemsCenter, BorderTop, ButtonStyle, ButtonText } from 'Test/constants/StyleConstants'
 import { TextBlack, TextYellow } from 'Test/constants/colors'
-
+// <TouchableOpacity
+//   style={[JustifyContentCenter, AlignItemsCenter,
+//     styles.btn,
+//     {backgroundColor: "#828282", marginRight: 9 * WidthScale}]}>
+//   <Text style={[styles.btnText]}>转出</Text>
+// </TouchableOpacity>
+// <TouchableOpacity
+//   style={[JustifyContentCenter, AlignItemsCenter, styles.btn, {backgroundColor: TextYellow}]}>
+//   <Text style={[styles.btnText]}>转入</Text>
+// </TouchableOpacity>
 const ZiChanBox = React.createClass({
 
   render() {
@@ -25,16 +35,17 @@ const ZiChanBox = React.createClass({
             <Text style={[styles.dianziNum]}>48493***7979897</Text>
             <Text style={[styles.dianziMoney]}>¥10.00</Text>
             <View style={[FlexRow, JustifyContentCenter, {marginBottom: 18 * WidthScale}]}>
-              <TouchableOpacity
-                style={[JustifyContentCenter, AlignItemsCenter,
-                  styles.btn,
-                  {backgroundColor: "#828282", marginRight: 9 * WidthScale}]}>
-                <Text style={[styles.btnText]}>转出</Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={[JustifyContentCenter, AlignItemsCenter, styles.btn, {backgroundColor: TextYellow}]}>
-                <Text style={[styles.btnText]}>转入</Text>
-              </TouchableOpacity>
+              <Button
+                style={[ButtonStyle, {backgroundColor: "#828282", marginRight: 9 * WidthScale}]}
+                textStyle={[ButtonText]}>
+                转出
+              </Button>
+
+              <Button
+                style={[ButtonStyle, {backgroundColor: TextYellow}]}
+                textStyle={[ButtonText]}>
+                转入
+              </Button>
             </View>
           </View>
 
@@ -102,14 +113,4 @@ const styles = StyleSheet.create({
     paddingBottom: 12 * WidthScale,
     textAlign: 'center'
   },
-  btn: {
-    width: 108 * WidthScale,
-    paddingTop: 7 * WidthScale,
-    paddingBottom: 7 * WidthScale,
-    borderRadius: 50
-  },
-  btnText: {
-    fontSize: 14,
-    color: "#d7d7d7"
-  }
 })
